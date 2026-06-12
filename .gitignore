@@ -1,0 +1,31 @@
+# Python virtual environments
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# ML models / serialized weights
+*.pkl
+models/
+
+# Large datasets (we keep dataset.csv as baseline)
+city_day.csv
+city_hour.csv
+station_day.csv
+station_hour.csv
+stations.csv
+baseline.csv
+drift_status.json
+
+# Node modules / frontend build artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# IDE / System files
+.vscode/
+.idea/
+.DS_Store
+*.log
+~$*.docx
