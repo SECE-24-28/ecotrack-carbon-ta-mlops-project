@@ -1,5 +1,8 @@
 # EcoTrack: Carbon-Aware MLOps Governance Middleware
 
+> [!WARNING]
+> **NOTE FOR JUDGES regarding the Deployed Link**: The backend API for this project is hosted on Render's Free Tier, which spins down after 15 minutes of inactivity. **If the dashboard is stuck on "Loading EcoTrack Status..." when you first open the deployed link, please wait ~50 seconds for the cloud server to wake up.** Once it wakes up, it will run at full speed!
+
 EcoTrack is a carbon-aware MLOps governance tower designed to mitigate the environmental impact of modern artificial intelligence pipelines. Rather than blindly triggering model retraining cycles as soon as data drift is detected, EcoTrack audits regional grid emissions, calculates cooling water loss, assesses compliance tax liabilities, and conducts validation tournament duels before promoting model weights.
 
 ---
