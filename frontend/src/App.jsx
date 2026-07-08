@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { Shield, Cpu, AlertTriangle, RotateCcw, Award, ArrowRight, Activity, Zap, Layers } from 'lucide-react';
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://ecotrack-api-mqgg.onrender.com";
 
 function App() {
   const [entered, setEntered] = useState(false);
