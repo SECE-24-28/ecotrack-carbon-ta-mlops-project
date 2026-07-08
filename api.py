@@ -258,7 +258,7 @@ def retrain_model(payload: dict = Body(...)):
     champ_mae = mean_absolute_error(y_val, active_champion.predict(X_val))
     chal_mae = mean_absolute_error(y_val, challenger.predict(X_val))
 
-    tournament_won = chal_r2 > champ_r2
+    tournament_won = bool(chal_r2 > champ_r2)
 
     if tournament_won:
         # Register new model in MongoDB Registry
