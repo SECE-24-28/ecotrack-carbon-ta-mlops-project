@@ -82,6 +82,7 @@ function App() {
       });
       await res.json();
       setRetrainOutput(null);
+      setShowLedger(false);
       await fetchStatus();
     } catch (e) {
       console.error(e);
