@@ -104,13 +104,6 @@ function App() {
     setLoading(false);
   };
 
-  if (!status) {
-    return (
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', background: '#080b10', color: '#fff' }}>
-        <h2>Loading EcoTrack Core Engine Status...</h2>
-      </div>
-    );
-  }
 
   // Render 🌟 Premium Landing Page
   if (!entered) {
@@ -176,6 +169,17 @@ function App() {
               Launch Control Tower <ArrowRight size={20} />
             </button>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (!status) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', background: '#080b10', color: '#fff' }}>
+        <div style={{ textAlign: 'center' }}>
+          <h2 style={{ color: '#10b981', marginBottom: '1rem' }}>Waking up Cloud Engines...</h2>
+          <p style={{ color: '#94a3b8' }}>(Render Free Tier cold-start: please wait ~50 seconds)</p>
         </div>
       </div>
     );
